@@ -7,21 +7,29 @@ body {
     background-color: #000;
     font-family: Tahoma,Arial,sans-serif;
     font-size: 13px;
-    max-height: 100vh;
-    min-width: 100hw;
+    margin: 0px;
+    height: 100%;
 }
 
 .topbar {
-    display: block;
-    background-image: url(img/darkNoiseTopBar.jpg);
+    background: url(img/darkNoiseTopBar.jpg);
     color: #000;
     position: absolute;
     width: 100%;
     height: 32px;
+    overflow: hidden;
+}
+
+.topbar div {
+}
+
+#wrapper {
+    background-image: url(img/bgBlue.jpg);
+    background-position: center;
+    min-width: 100vw;
 }
 
 #game {
-    background-image: url(img/bgBlue.jpg);
     left: 0px;
     top: 0px;
     right: 0px;
@@ -31,20 +39,22 @@ body {
 
 #left_bar {
     grid-column: 1;
-}
-
-#middle_bar {
-    grid-column: 3;
-}
-
-#right_bar {
-    grid-column: 5;
+    text-align: center;
 }
 
 #vertical_panel_left {
     grid-column: 2;
 }
 
+#middle_bar {
+    grid-column: 3;
+}
+
 #vertical_panel_right {
     grid-column: 4;
 }
+
+#right_bar {
+    grid-column: 5;
+}
+
