@@ -1,0 +1,38 @@
+html {
+    font: inherit;
+}
+
+body {
+    background-image: url(img/darkNoise.jpg);
+    background-color: #000;
+    font-family: Tahoma,Arial,sans-serif;
+}
+
+.topbar {
+    display: block;
+    background-image: url(img/darkNoiseTopBar.jpg);
+    color: #ccc;
+    position: absolute;
+    width: 100%;
+}
+
+#game {
+    background-image: url(img/bgBlue.jpg);
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: grid;
+}
+
+#left_bar {
+    grid-column: 1;
+}
+
+#middle_bar {
+    grid-column: 2;
+}
+
+#right_bar {
+    grid-column: 3;
+}
