@@ -1,8 +1,10 @@
 # cookie-clicker-from-scratch
-Creating a Cookie Clicker from scratch using the sources from original site.
+The project will be entirely based on the original game:
+https://orteil.dashnet.org/cookieclicker/ - Orteil
 
-The idea behind the project is to learn HTML, CSS and Javascript.
+All the sources were found in the original website.
 
-In collaboration between two students of the same class and course:
-Bruno Gerldi Weber
-Henrique Liba
+This project will serve as a practical method to learn JavaScript, HTML and CSS.
+
+Originally started by me: Bruno Geraldi Weber
+In cooperation with: Henrique Liba

@@ -8,7 +8,6 @@ body {
     font-family: Tahoma,Arial,sans-serif;
     font-size: 13px;
     margin: 0px;
-    height: 100%;
     color: #fff;
     user-select: none;
 }
@@ -38,10 +37,18 @@ body {
     background-image: url(img/bgBlue.jpg);
 }
 
+#wood_separators {
+    height: 100%;
+    width: 16px;
+    background-image: url(img/panelVertical.png);
+    background-repeat: repeat-y;
+}
+
 #left_bar {
     grid-column: 1;
     text-align: center;
-    
+    background-image: url(img/panelGradientTop.png);
+    background-repeat: repeat-x;
 }
 
 #cookie_numbers {
@@ -54,7 +61,6 @@ body {
     border-radius: 128px;
     background-image: url(img/perfectCookie.png);
     background-size: 100%;
-    z-index: 10000;
     border: 0;
     margin: auto;
     margin-top: 20%;
@@ -70,18 +76,8 @@ body {
     cursor: pointer;
 }
 
-#vertical_panel_left {
-    height: 100%;
-    grid-column: 2;
-    background-repeat: repeat-y;
-}
-
 #middle_panel {
     grid-column: 3;
-}
-
-#vertical_panel_right {
-    grid-column: 4;
 }
 
 #right_panel {
