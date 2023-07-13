@@ -41,6 +41,11 @@ body {
 #left_bar {
     grid-column: 1;
     text-align: center;
+    
+}
+
+#cookie_numbers {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #big_cookie {
@@ -62,6 +67,7 @@ body {
     background: url(img/empty.png);
     border: 0;
     outline: 0;
+    cursor: pointer;
 }
 
 #vertical_panel_left {
@@ -70,7 +76,7 @@ body {
     background-repeat: repeat-y;
 }
 
-#middle_bar {
+#middle_panel {
     grid-column: 3;
 }
 
@@ -78,6 +84,6 @@ body {
     grid-column: 4;
 }
 
-#right_bar {
+#right_panel {
     grid-column: 5;
 }

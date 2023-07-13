@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
-    <title>Cookie Clicker Clone</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-</head>
-<body>
-    <div id="wrapper"> <!-- Basically a div to parent the whole page -->
-        <div id="topbar">
-            <div>
-                <b style="font-weight:bold;">Cookie Clicker CLONE </b>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="main.js"></script>
+        <title>Cookie Clicker Clone</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <div id="wrapper"> <!-- Basically a div to parent the whole page -->
+            <div id="topbar">
+                <div>
+                    <b style="font-weight:bold;">Cookie Clicker CLONE </b>
+                </div>
+                <div>
+                    <b>Authors: Bruno Geraldi Weber - Henrique Liba</b>
+                </div>
+                <div>
+                    <b>Cookie Clicker from scratch</b>
+                </div>
             </div>
-            <div>
-                <b>Authors: Bruno Geraldi Weber - Henrique Liba</b>
-            </div>
-            <div>
-                <b>Cookie Clicker from Scratch</b>
+            <div id="game">
+                <div id="left_bar">
+                    <div>
+                    <h2>Bakery's Name</h1>
+                    </div>
+                    <div id="cookie_numbers">
+                        <div>
+                        <h1 id="cookie_balance">0 Cookies</h1>
+                        </div>
+                        <div>
+                        <h3 id="cookie_persec">per second: 0</h3>
+                        </div>
+                    </div>
+                    <div id="big_cookie">
+                    <button  class="big_cookie_button" onclick="bake_cookie()"></button>
+                    </div>
+                </div>
+                <div id="vertical_panel_left">
+                    <img src="img\panelVertical.png">
+                </div>
+                <div id="middle_panel">
+                    <div>Buttons/news</div>
+                    <div>Items</div>
+                </div>
+                <div id="vertical_panel_right">
+                    <img src="img\panelVertical.png">
+                </div>
+                <div id="right_panel">
+                    <div>Store</div>
+                    <div>Upgrades</div>
+                    <div>buy and sell quantities</div>
+                    <div>Purchases</div>
+                </div>
             </div>
         </div>
-        <div id="game">
-            <div id="left_bar" style="background-color: rgba(255, 228, 196, 0.164);">
-                <div>
-                <h2>Bakery's Name</h1>
-                </div>
-                <div>
-                <h1 id="cookie_balance">0 Cookies</h1>
-                </div>
-                <div>
-                <h3 id="cookie_persec">per second: 0</h3>
-                </div>
-                <div id="big_cookie">
-                <button  class="big_cookie_button" onclick=""></button>
-                </div>
-            </div>
-            <div id="vertical_panel_left">
-                <img src="img\panelVertical.png">
-            </div>
-            <div id="middle_bar">
-                <div>Buttons/news</div>
-                <div>Items</div>
-            </div>
-            <div id="vertical_panel_right">
-                <img src="img\panelVertical.png">
-            </div>
-                <div id="right_bar">
-                <div>Store</div>
-                <div>Upgrades</div>
-                <div>buy and sell quantities</div>
-                <div>Purchases</div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
