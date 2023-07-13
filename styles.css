@@ -3,38 +3,39 @@ html {
 }
 
 body {
-    background-image: url(img/darkNoise.jpg);
+    --background-image: url(img/darkNoise.jpg);
     background-color: #000;
     font-family: Tahoma,Arial,sans-serif;
     font-size: 13px;
     margin: 0px;
     height: 100%;
+    color: #fff;
+    user-select: none;
 }
 
-.topbar {
-    background: url(img/darkNoiseTopBar.jpg);
-    color: #000;
+#topbar {
     position: absolute;
-    width: 100%;
+    background-image: url(img/darkNoiseTopBar.jpg);
+    width: 100vw;
     height: 32px;
     overflow: hidden;
+    display: flex;
 }
-
-.topbar div {
-}
-
-#wrapper {
-    background-image: url(img/bgBlue.jpg);
-    background-position: center;
-    min-width: 100vw;
+#topbar>div {
+    float: left;
+    border-right: 1px solid #000;
+    box-shadow: 0px 0px 3px 1px rgba(255,255,255,0.2) inset;
+    padding: 7px 8px 9px 8px;
 }
 
 #game {
+    position: absolute;
+    top: 32px;
     left: 0px;
-    top: 0px;
+    bottom: 0px;
     right: 0px;
     display: grid;
-    height: 94vh;
+    background-image: url(img/bgBlue.jpg);
 }
 
 #left_bar {
@@ -42,8 +43,31 @@ body {
     text-align: center;
 }
 
+#big_cookie {
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    background-image: url(img/perfectCookie.png);
+    background-size: 100%;
+    z-index: 10000;
+    border: 0;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.big_cookie_button {
+    width: 256px;
+    height: 256px;
+    border-radius: 128px;
+    background: url(img/empty.png);
+    border: 0;
+    outline: 0;
+}
+
 #vertical_panel_left {
+    height: 100%;
     grid-column: 2;
+    background-repeat: repeat-y;
 }
 
 #middle_bar {
@@ -57,4 +81,3 @@ body {
 #right_bar {
     grid-column: 5;
 }
-
