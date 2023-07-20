@@ -10,19 +10,19 @@
     </head>
     <body>
         <div id="wrapper"> <!-- Basically a div to parent the whole page -->
-            <div id="topbar">
+            <div id="topbar"> <!-- Top Bar with credits -->
                 <div>
-                    <b style="font-weight:bold;">Cookie Clicker CLONE </b>
+                    <b style="font-weight:bold;">Cookie Clicker CLONE</b>
                 </div>
                 <div>
-                    <b>Authors: Bruno Geraldi Weber - Henrique Liba</b>
+                    <b>Authors: Bruno Geraldi Weber & Henrique Liba</b>
                 </div>
                 <div>
                     <b>Cookie Clicker from scratch</b>
                 </div>
             </div>
-            <div id="game">
-                <div id="left_bar">
+            <div id="game"> <!-- The game itself, everything bellow the top bar -->
+                <div id="left_panel">
                     <div>
                     <h2>Bakery's Name</h1>
                     </div>
@@ -35,24 +35,27 @@
                         </div>
                     </div>
                     <div id="big_cookie">
-                    <button  class="big_cookie_button" onclick="bake_cookie()"></button>
+                    <button class="big_cookie_button" onclick="bake_cookie()"></button>
                     </div>
                 </div>
-                <div id="vertical_panel_left">
-                    <img src="img\panelVertical.png">
-                </div>
+                <div id="wood_separators" class="vertical_panel_left" style="left: 30%"></div>
                 <div id="middle_panel">
-                    <div>Buttons/news</div>
-                    <div>Items</div>
+                    <div id="middle_panel_buttons">
+                        <div id="options">Options</div>
+                        <div id="stats">Stats</div>
+                        <div id="info">Info</div>
+                        <div id="legacy">Legacy</div>
+                        <div id="wood_separators_mid_panel"></div>
+                    </div>
                 </div>
-                <div id="vertical_panel_right">
-                    <img src="img\panelVertical.png">
-                </div>
+                <div id="wood_separators" class="vertical_panel_right" style="right: 317px"></div>
                 <div id="right_panel">
-                    <div>Store</div>
-                    <div>Upgrades</div>
-                    <div>buy and sell quantities</div>
-                    <div>Purchases</div>
+                    <div id="store">
+                        <div id="store_title">Store</div>
+                        <div id="upgrades"></div>
+
+                    </div>
+
                 </div>
             </div>
         </div>

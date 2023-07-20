@@ -3,22 +3,32 @@ html {
 }
 
 body {
-    --background-image: url(img/darkNoise.jpg);
+    background-image: url(img/darkNoise.jpg);
     background-color: #000;
     font-family: Tahoma,Arial,sans-serif;
+    font-weight: bold;
     font-size: 13px;
     margin: 0px;
-    height: 100%;
     color: #fff;
     user-select: none;
 }
 
+#wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
 #topbar {
     position: absolute;
-    background-image: url(img/darkNoiseTopBar.jpg);
-    width: 100vw;
+    background-image: url(img/darkNoiseTopBar.jpg) repeat-x bottom;
+    font-family: Tahoma,Arial,sans-serif;
+    width: 100%;
     height: 32px;
-    overflow: hidden;
     display: flex;
 }
 #topbar>div {
@@ -30,18 +40,33 @@ body {
 
 #game {
     position: absolute;
-    top: 32px;
     left: 0px;
-    bottom: 0px;
     right: 0px;
-    display: grid;
+    top: 32px;
+    bottom: 0px;
     background-image: url(img/bgBlue.jpg);
+    font-family: 'Merriweather', Georgia,serif;
 }
 
-#left_bar {
+#wood_separators {
+    position: absolute;
+    height: 100%;
+    width: 16px;
+    background: url(img/panelGradientTop.png) no-repeat top left,
+                url(img/panelGradientBottom.png) no-repeat bottom left,
+                url(img/panelVertical.png) repeat-y;
+}
+
+#left_panel {
+    position: absolute;
     grid-column: 1;
+    width: 30%;
+    min-width: 100px;
+    height: 100%;
     text-align: center;
-    
+    background-image: url(img/panelGradientTop.png);
+    background-repeat: repeat-x;
+
 }
 
 #cookie_numbers {
@@ -54,7 +79,6 @@ body {
     border-radius: 128px;
     background-image: url(img/perfectCookie.png);
     background-size: 100%;
-    z-index: 10000;
     border: 0;
     margin: auto;
     margin-top: 20%;
@@ -70,20 +94,73 @@ body {
     cursor: pointer;
 }
 
-#vertical_panel_left {
-    height: 100%;
-    grid-column: 2;
-    background-repeat: repeat-y;
-}
-
 #middle_panel {
-    grid-column: 3;
+    position: absolute;
+    left: 30%;
+    right: 318px;
+    top: 0;
+    bottom: 0;
+    min-width: 100px;
+    padding-left: 16px;
+    margin-right: 15px;
 }
 
-#vertical_panel_right {
-    grid-column: 4;
+#middle_panel_buttons {
+    text-align: center;
+    position: relative;
+    padding: 16px;
+    padding-bottom: 32px;
+    font-size: 16px;
+    height: 60px;
+    background: url(img/shadedBorders.png);
+    background-size: 100% 96px;
+}
+
+#wood_separators_mid_panel {
+    background: url(img/panelGradientLeft.png) no-repeat top left,
+                url(img/panelGradientRight.png) no-repeat top right,
+                url(img/panelHorizontal.png) repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    left: 0px;
+    right: 0px;
+
 }
 
 #right_panel {
-    grid-column: 5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#store {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+#store_title {
+    position: relative;
+    text-align: center;
+    padding: 8px;
+    width: 284px;
+    font-size: 28px;
+    text-shadow: 0px 1px 4px #000;
+    background: url(img/blackGradientSmallTop.png) repeat-x top;
+}
+
+#upgrades {
+    background: url(img/panelGradientLeft.png) no-repeat top left,
+                url(img/panelGradientRight.png) no-repeat top right,
+                url(img/panelHorizontal.png?v=2) repeat-x;~
+    position: relative;
+    height: 60px;
+    width: 300px;
+    padding-top: 16px;
 }
