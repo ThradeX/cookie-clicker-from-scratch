@@ -64,27 +64,91 @@ body {
     min-width: 100px;
     height: 100%;
     text-align: center;
-    background-image: url(img/panelGradientTop.png);
-    background-repeat: repeat-x;
+    background: url(img/shadedBorders.png);
+    background-size: 100% 100%;
+}
 
+#bottom_gradient {
+    background: url(img/blackGradient.png) repeat-x bottom;
+    top: 300px;
+    height: 640px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    
 }
 
 #cookie_numbers {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+#cookie_anchor {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+@keyframes shine_rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#shine_right {
+    position: absolute;
+    background: url(img/shine.png) no-repeat;
+    opacity: 40%;
+    width: 512px;
+    height: 512px;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 10%;
+    left: -256px;
+    top: -256px;
+    animation: shine_rot 25s linear infinite;
+}
+
+#shine_left {
+    position: absolute;
+    background: url(img/shine.png) no-repeat;
+    opacity: 40%;
+    width: 512px;
+    height: 512px;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 10%;
+    left: -256px;
+    top: -256px;
+    animation: shine_rot 25s linear infinite;
+    animation-direction: reverse;
+}
+
+@keyframes cookie_wobble {
+    0%, 50% {
+      transform: scale(1);
+    }
+    25%, 100% {
+      transform: scale(1.10);
+    }
+}
+
 #big_cookie {
+    position: absolute;
     width: 256px;
     height: 256px;
     border-radius: 128px;
     background-image: url(img/perfectCookie.png);
     background-size: 100%;
     border: 0;
-    margin: auto;
-    margin-top: 20%;
+    left: -128px;
+    top: -128px;
+    cursor: pointer;
 }
 
-.big_cookie_button {
+/*.big_cookie_button {
     width: 256px;
     height: 256px;
     border-radius: 128px;
@@ -93,6 +157,8 @@ body {
     outline: 0;
     cursor: pointer;
 }
+Trying to find why do i even need this
+*/
 
 #middle_panel {
     position: absolute;
@@ -158,9 +224,20 @@ body {
 #upgrades {
     background: url(img/panelGradientLeft.png) no-repeat top left,
                 url(img/panelGradientRight.png) no-repeat top right,
-                url(img/panelHorizontal.png?v=2) repeat-x;~
+                url(img/panelHorizontal.png?v=2) repeat-x;
     position: relative;
     height: 60px;
     width: 300px;
     padding-top: 16px;
+    min-height: 60px;
 }
+
+#products {
+    background: url(img/panelGradientLeft.png) no-repeat top left,
+                url(img/panelGradientRight.png) no-repeat top right,
+                url(img/panelHorizontal.png?v=2) repeat-x;
+    position: relative;
+    height: 60px;
+    width: 300px;
+
+            }

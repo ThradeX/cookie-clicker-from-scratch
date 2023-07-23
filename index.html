@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="main.js"></script>
-        <title>Cookie Clicker Clone</title>
+        <title id="title">Cookie Clicker Clone</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body>
-        <div id="wrapper"> <!-- Basically a div to parent the whole page -->
+        <div id="wrapper"> <!-- div to parent the whole page -->
             <div id="topbar"> <!-- Top Bar with credits -->
                 <div>
                     <b style="font-weight:bold;">Cookie Clicker CLONE</b>
@@ -23,6 +23,7 @@
             </div>
             <div id="game"> <!-- The game itself, everything bellow the top bar -->
                 <div id="left_panel">
+                    <div id="bottom_gradient"></div>
                     <div>
                     <h2>Bakery's Name</h1>
                     </div>
@@ -34,8 +35,12 @@
                         <h3 id="cookie_persec">per second: 0</h3>
                         </div>
                     </div>
-                    <div id="big_cookie">
-                    <button class="big_cookie_button" onclick="bake_cookie()"></button>
+                    <div id="cookie_anchor">
+                        <div id="shine_right"></div>
+                        <div id="shine_left"></div>
+                        <div id="big_cookie"  onclick="bake_cookie()">
+                        <!-- <button class="big_cookie_button"></button> Trying to find why do i even need this -->
+                        </div>
                     </div>
                 </div>
                 <div id="wood_separators" class="vertical_panel_left" style="left: 30%"></div>
@@ -53,9 +58,8 @@
                     <div id="store">
                         <div id="store_title">Store</div>
                         <div id="upgrades"></div>
-
+                        <div id="products"></div>
                     </div>
-
                 </div>
             </div>
         </div>
