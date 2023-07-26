@@ -15,7 +15,7 @@
                     <b style="font-weight:bold;">Cookie Clicker CLONE</b>
                 </div>
                 <div>
-                    <b>Authors: Bruno Geraldi Weber & Henrique Liba</b>
+                    <b>Authors: Bruno Geraldi Weber</b>
                 </div>
                 <div>
                     <b>Cookie Clicker from scratch</b>
@@ -24,6 +24,7 @@
             <div id="game"> <!-- The game itself, everything bellow the top bar -->
                 <div id="left_panel">
                     <div id="bottom_gradient"></div>
+                    <div id="bottom_filler"></div>
                     <div>
                     <h2>Bakery's Name</h1>
                     </div>
@@ -38,23 +39,27 @@
                     <div id="cookie_anchor">
                         <div id="shine_right"></div>
                         <div id="shine_left"></div>
-                        <div id="big_cookie"  onclick="bake_cookie()">
-                        <!-- <button class="big_cookie_button"></button> Trying to find why do i even need this -->
+                        <div id="big_cookie"> <!-- We put 2 divs for the cookie simply because of the wobbliness-->
+                        <button id="big_cookie_button" onclick="bake_cookie()"></button>
                         </div>
                     </div>
                 </div>
                 <div id="wood_separators" class="vertical_panel_left" style="left: 30%"></div>
                 <div id="middle_panel">
                     <div id="middle_panel_buttons">
-                        <div id="options">Options</div>
-                        <div id="stats">Stats</div>
-                        <div id="info">Info</div>
-                        <div id="legacy">Legacy</div>
+                        <div id="options" class="woodslabs">Options</div>
+                        <div id="stats" class="woodslabs">Stats</div>
+                        <div id="info" class="woodslabs">Info</div>
+                        <div id="legacy" class="woodslabs">Legacy</div>
                         <div id="wood_separators_mid_panel"></div>
+                    </div>
+                    <div>
+                        Items
                     </div>
                 </div>
                 <div id="wood_separators" class="vertical_panel_right" style="right: 317px"></div>
                 <div id="right_panel">
+
                     <div id="store">
                         <div id="store_title">Store</div>
                         <div id="upgrades"></div>

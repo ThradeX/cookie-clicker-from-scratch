@@ -46,6 +46,7 @@ body {
     bottom: 0px;
     background-image: url(img/bgBlue.jpg);
     font-family: 'Merriweather', Georgia,serif;
+    overflow: hidden;
 }
 
 #wood_separators {
@@ -66,16 +67,24 @@ body {
     text-align: center;
     background: url(img/shadedBorders.png);
     background-size: 100% 100%;
+    overflow: hidden;
 }
 
 #bottom_gradient {
+    position: absolute;
     background: url(img/blackGradient.png) repeat-x bottom;
     top: 300px;
     height: 640px;
-    position: absolute;
     left: 0px;
     right: 0px;
-    
+}
+#bottom_filler{
+    background: #000;
+    position: absolute;
+    top: 940px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
 }
 
 #cookie_numbers {
@@ -126,15 +135,6 @@ body {
     animation-direction: reverse;
 }
 
-@keyframes cookie_wobble {
-    0%, 50% {
-      transform: scale(1);
-    }
-    25%, 100% {
-      transform: scale(1.10);
-    }
-}
-
 #big_cookie {
     position: absolute;
     width: 256px;
@@ -146,9 +146,15 @@ body {
     left: -128px;
     top: -128px;
     cursor: pointer;
+    transition: 100ms;
 }
-
-/*.big_cookie_button {
+#big_cookie:hover {
+    transform: scale(1.05);
+}
+#big_cookie:active {
+    transform: scale(0.98);
+}
+#big_cookie_button {
     width: 256px;
     height: 256px;
     border-radius: 128px;
@@ -157,8 +163,6 @@ body {
     outline: 0;
     cursor: pointer;
 }
-Trying to find why do i even need this
-*/
 
 #middle_panel {
     position: absolute;
@@ -169,6 +173,7 @@ Trying to find why do i even need this
     min-width: 100px;
     padding-left: 16px;
     margin-right: 15px;
+    overflow: hidden;
 }
 
 #middle_panel_buttons {
@@ -177,9 +182,60 @@ Trying to find why do i even need this
     padding: 16px;
     padding-bottom: 32px;
     font-size: 16px;
-    height: 60px;
+    height: 64px;
     background: url(img/shadedBorders.png);
     background-size: 100% 96px;
+}
+
+#options {
+    top: 0px;
+    left: 0px;
+    background-position: 0px 0px;
+    padding-top: 16px;
+}
+#options:hover, #options:active {
+    background-position: 0px -96px;
+}
+
+#stats {
+    bottom: 16px;
+    left: 0px;
+    background-position: 0px -48px;
+    padding-top: 14px;
+}
+#stats:hover, #stats:active {
+    background-position: 0px -144px;
+}
+
+#info {
+    top: 0px;
+    right: 0px;
+    background-position: -100px 0px;
+    padding-top: 16px;
+}
+#info:hover, #info:active {
+    background-position: -100px -96px;
+}
+
+#legacy {
+    bottom: 16px;
+    right: 0px;
+    background-position: -100px -48px;
+    padding-top: 14px;
+}
+#legacy:hover, #legacy:active{
+    background-position: -100px -144px;
+}
+
+.woodslabs {
+    background: url(img/panelMenu3.png);
+    position: absolute;
+    width: 100px;
+    height: 48px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #999;
+    cursor: pointer;
 }
 
 #wood_separators_mid_panel {
@@ -191,7 +247,7 @@ Trying to find why do i even need this
     height: 16px;
     left: 0px;
     right: 0px;
-
+    bottom: 0px;
 }
 
 #right_panel {
@@ -239,5 +295,4 @@ Trying to find why do i even need this
     position: relative;
     height: 60px;
     width: 300px;
-
-            }
+}
