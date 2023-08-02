@@ -44,7 +44,8 @@ body {
     right: 0px;
     top: 32px;
     bottom: 0px;
-    background-image: url(img/bgBlue.jpg);
+    background: url(img/shadedBordersSoft.png) no-repeat, url(img/bgBlue.jpg);
+    background-size: 100% 100%, auto;
     font-family: 'Merriweather', Georgia,serif;
     overflow: hidden;
 }
@@ -60,12 +61,11 @@ body {
 
 #left_panel {
     position: absolute;
-    grid-column: 1;
     width: 30%;
     min-width: 100px;
     height: 100%;
     text-align: center;
-    background: url(img/shadedBorders.png);
+    background: url(img/shadedBordersSoft.png);
     background-size: 100% 100%;
     overflow: hidden;
 }
@@ -88,7 +88,15 @@ body {
 }
 
 #cookie_numbers {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
+    top: 10%;
+    padding: 2px 0px;
+    width: 100%;
+}
+#cookie_balance {
+    font-size: 28px;
+    margin-top: -2px;
 }
 
 #cookie_anchor {
@@ -105,8 +113,7 @@ body {
         transform: rotate(360deg);
     }
 }
-
-#shine_right {
+#shine {
     position: absolute;
     background: url(img/shine.png) no-repeat;
     opacity: 40%;
@@ -118,21 +125,6 @@ body {
     left: -256px;
     top: -256px;
     animation: shine_rot 25s linear infinite;
-}
-
-#shine_left {
-    position: absolute;
-    background: url(img/shine.png) no-repeat;
-    opacity: 40%;
-    width: 512px;
-    height: 512px;
-    background-size: 100% 100%;
-    margin: auto;
-    margin-top: 10%;
-    left: -256px;
-    top: -256px;
-    animation: shine_rot 25s linear infinite;
-    animation-direction: reverse;
 }
 
 #big_cookie {
@@ -252,8 +244,8 @@ body {
 
 #right_panel {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
     overflow-x: hidden;
@@ -271,7 +263,7 @@ body {
     position: relative;
     text-align: center;
     padding: 8px;
-    width: 284px;
+    width: 286px;
     font-size: 28px;
     text-shadow: 0px 1px 4px #000;
     background: url(img/blackGradientSmallTop.png) repeat-x top;
@@ -293,6 +285,16 @@ body {
                 url(img/panelGradientRight.png) no-repeat top right,
                 url(img/panelHorizontal.png?v=2) repeat-x;
     position: relative;
-    height: 60px;
+    height: auto;
+    min-height: 60px;
     width: 300px;
+}
+
+#cursor {
+    background: url(img/buildings.png) left  no-repeat, url(img/storeTile.jpg);
+    position: relative;
+    width: 300px;
+    height: 64px;
+    top: 16px;
+    opacity: 60%;
 }
