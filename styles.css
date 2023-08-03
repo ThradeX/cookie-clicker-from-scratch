@@ -291,8 +291,9 @@ body {
 }
 
 #cursor {
-    background: url(img/buildings.png) left  no-repeat, url(img/storeTile.jpg);
+    background: url(img/buildings.png) 10px no-repeat, url(img/storeTile.jpg);
     position: relative;
+    background-position: 64px 64px;
     width: 300px;
     height: 64px;
     top: 16px;

@@ -4,17 +4,17 @@ function bake_cookie() {
     cookie_balance_text ++
 
     if (cookie_balance_text == 1) {
-        document.getElementById("cookie_balance").innerHTML = cookie_balance_text + " Cookie";
+        document.getElementById("cookie_balance").innerHTML = cookie_balance_text + " cookie";
     } else {
-        document.getElementById("cookie_balance").innerHTML = cookie_balance_text + " Cookies";
+        document.getElementById("cookie_balance").innerHTML = cookie_balance_text + " cookies";
     }
 }
 
 function update_title() {
     if (cookie_balance_text == 1) {
-        document.title = cookie_balance_text + " Cookie" + " - Cookie Clicker";
+        document.title = cookie_balance_text + " cookie" + " - Cookie Clicker";
     } else {
-        document.title = cookie_balance_text + " Cookies" + " - Cookie Clicker";
+        document.title = cookie_balance_text + " cookies" + " - Cookie Clicker";
     }
 }
 setInterval(update_title, 2000);
