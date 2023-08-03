@@ -1,3 +1,24 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 html {
     font: inherit;
 }
@@ -11,6 +32,7 @@ body {
     margin: 0px;
     color: #fff;
     user-select: none;
+    line-height: 1;
 }
 
 #wrapper {
@@ -60,6 +82,7 @@ body {
 }
 
 #left_panel {
+    font-size: 25px;
     position: absolute;
     width: 30%;
     min-width: 100px;
@@ -290,12 +313,22 @@ body {
     width: 300px;
 }
 
-#cursor {
-    background: url(img/buildings.png) 10px no-repeat, url(img/storeTile.jpg);
+#buttom {
+    background: url(img/storeTile.jpg);
     position: relative;
-    background-position: 64px 64px;
-    width: 300px;
     height: 64px;
+    width: 300px;
     top: 16px;
     opacity: 60%;
+    cursor: pointer;
+}
+#buttom:hover {
+    background: url(img/shadedBorders.png) 300px 64px;
+}
+
+#cursor {
+    background: url(img/buildings.png);
+    width: 64px;
+    height: 64px;
+    background-position: -64px 0px;
 }
