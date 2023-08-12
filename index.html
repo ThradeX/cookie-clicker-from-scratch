@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="main.js"></script>
         <title id="title">Cookie Clicker Clone</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body>
-       <div id="wrapper"> <!-- div to parent the whole page -->
+       <div id="wrapper"> <!-- div to wrap the whole page -->
             <div id="topbar"> <!-- Top Bar with credits -->
                 <div>
                     <b style="font-weight:bold;">Cookie Clicker CLONE</b>
@@ -29,7 +29,7 @@
                         Cute Bakery's Name
                     </div>
                     <div id="cookie_numbers">
-                        <div id="cookie_balance">
+                        <div id="cookie_balance" class="title">
                             0 cookies
                         </div>
                         <div id="cookie_persec">
@@ -39,7 +39,7 @@
                     <div id="cookie_anchor">
                         <div id="shine"></div>
                         <div id="shine" style="animation-direction: reverse"></div>
-                        <div id="big_cookie"> <!-- We put 2 divs for the cookie simply because of the wobbliness-->
+                        <div id="big_cookie">
                         <button id="big_cookie_button" onclick="bake_cookie()"></button>
                         </div>
                     </div>
@@ -60,11 +60,14 @@
                 <div id="wood_separators" class="vertical_panel_right" style="right: 317px"></div>
                 <div id="right_panel">
                     <div id="store">
-                        <div id="store_title">Store</div>
+                        <div id="store_title" class="title">Store</div>
                         <div id="upgrades"></div>
                         <div id="products">
                             <div id="buttom" class="cursor">
-                                <div id="cursor"></div>
+                                <div id="cursor">
+                                    <div id="building_name" class="title">Cursor</div>
+                                    <div id="cursor_price">15</div>
+                                </div>
                             </div>
                         </div>
                     </div>

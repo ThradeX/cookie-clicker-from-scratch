@@ -1,3 +1,4 @@
+/* HTML Reset - unifying browser configs */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,17 +20,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-html {
-    font: inherit;
-}
-
 body {
     background-image: url(img/darkNoise.jpg);
     background-color: #000;
     font-family: Tahoma,Arial,sans-serif;
     font-weight: bold;
     font-size: 13px;
-    margin: 0px;
     color: #fff;
     user-select: none;
     line-height: 1;
@@ -70,6 +66,11 @@ body {
     background-size: 100% 100%, auto;
     font-family: 'Merriweather', Georgia,serif;
     overflow: hidden;
+}
+/* The style for all the titles */
+.title {
+    font-size: 28px;
+    text-shadow: 0px 1px 4px #000;
 }
 
 #wood_separators {
@@ -118,8 +119,10 @@ body {
     width: 100%;
 }
 #cookie_balance {
-    font-size: 28px;
     margin-top: -2px;
+}
+#cookie_persec {
+    font-size: 14px;
 }
 
 #cookie_anchor {
@@ -287,8 +290,6 @@ body {
     text-align: center;
     padding: 8px;
     width: 286px;
-    font-size: 28px;
-    text-shadow: 0px 1px 4px #000;
     background: url(img/blackGradientSmallTop.png) repeat-x top;
 }
 
@@ -313,7 +314,7 @@ body {
     width: 300px;
 }
 
-#buttom {
+#button {
     background: url(img/storeTile.jpg);
     position: relative;
     height: 64px;
@@ -322,13 +323,34 @@ body {
     opacity: 60%;
     cursor: pointer;
 }
-#buttom:hover {
-    background: url(img/shadedBorders.png) 300px 64px;
+#button:hover {
+    box-shadow: #fff inset 0px 0px 10px;
 }
 
-#cursor {
+#cursor_icon {
     background: url(img/buildings.png);
     width: 64px;
     height: 64px;
     background-position: -64px 0px;
+}
+
+#cursor_name {
+    padding-left: 64px;
+    padding-top: 10px;
+}
+#cursor_price {
+    padding-left: 80px;
+    background: url(img/favicon.ico) no-repeat right;
+    height: 16px;
+    color: rgb(255, 55, 55);
+    text-shadow: 0px 1px 3px #000;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.building_quantity {
+    font-size: 50px;
+    margin-top: -60px;
+    margin-right: 5px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.30);
 }
