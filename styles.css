@@ -67,7 +67,7 @@ body {
     font-family: 'Merriweather', Georgia,serif;
     overflow: hidden;
 }
-/* The style for all the titles */
+/* The style for all the title-like texts */
 .title {
     font-size: 28px;
     text-shadow: 0px 1px 4px #000;
@@ -314,38 +314,17 @@ body {
     width: 300px;
 }
 
-#button {
+.button {
     background: url(img/storeTile.jpg);
     position: relative;
     height: 64px;
     width: 300px;
-    top: 16px;
     opacity: 60%;
+    top: 16px;
     cursor: pointer;
 }
-#button:hover {
+.button:hover {
     box-shadow: #fff inset 0px 0px 10px;
-}
-
-#cursor_icon {
-    background: url(img/buildings.png);
-    width: 64px;
-    height: 64px;
-    background-position: -64px 0px;
-}
-
-#cursor_name {
-    padding-left: 64px;
-    padding-top: 10px;
-}
-#cursor_price {
-    padding-left: 80px;
-    background: url(img/favicon.ico) no-repeat right;
-    height: 16px;
-    color: rgb(255, 55, 55);
-    text-shadow: 0px 1px 3px #000;
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .building_quantity {
     font-size: 50px;
@@ -353,4 +332,36 @@ body {
     margin-right: 5px;
     text-align: right;
     color: rgba(0, 0, 0, 0.30);
+}
+.building_price {
+    padding-left: 80px;
+    background: url(img/favicon.ico) no-repeat right;
+    height: 16px;
+    color: rgb(255, 55, 55);
+    text-shadow: 0px 1px 2px #000;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#cursor_icon {
+    background: url(img/buildings.png);
+    width: 64px;
+    height: 64px;
+    background-position: -64px 0px;
+}
+#cursor_name {
+    padding-left: 64px;
+    padding-top: 10px;
+}
+
+#grandma_icon {
+    background: url(img/buildings.png);
+    width: 64px;
+    height: 64px;
+    background-position: -64px -64px;
+}
+#grandma_name {
+    padding-left: 64px;
+    padding-top: 10px;
 }

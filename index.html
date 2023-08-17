@@ -25,15 +25,13 @@
                 <div id="left_panel">
                     <div id="bottom_gradient"></div>
                     <div id="bottom_filler"></div>
-                    <div>
+                    <div id="bakery_name">
                         Cute Bakery's Name
                     </div>
                     <div id="cookie_numbers">
                         <div id="cookie_balance" class="title">
-                            0 cookies
                         </div>
                         <div id="cookie_persec">
-                            per second: 0
                         </div>
                     </div>
                     <div id="cookie_anchor">
@@ -44,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="wood_separators" class="vertical_panel_left" style="left: 30%"></div>
+                <div id="wood_separators" class="vertical_panel_left" style="left: 30%"></div> <!-- Wood separator -->
                 <div id="middle_panel">
                     <div id="middle_panel_buttons">
                         <div id="options" class="woodslabs">Options</div>
@@ -57,17 +55,25 @@
                         Items
                     </div>
                 </div>
-                <div id="wood_separators" class="vertical_panel_right" style="right: 317px"></div>
+                <div id="wood_separators" class="vertical_panel_right" style="right: 317px"></div> <!-- Wood separator -->
                 <div id="right_panel">
                     <div id="store">
                         <div id="store_title" class="title">Store</div>
                         <div id="upgrades"></div>
                         <div id="products">
-                            <div id="buttom" class="cursor">
-                                <div id="cursor">
-                                    <div id="building_name" class="title">Cursor</div>
-                                    <div id="cursor_price">15</div>
+                            <div id="cursor" class="button" onclick="buy_cursor()">
+                                <div id="cursor_icon">
+                                    <div id="cursor_name" class="title">???</div>
+                                    <div id="cursor_price" class="building_price">15</div>
                                 </div>
+                                <div id="cursor_quantity" class="building_quantity"></div>
+                            </div>
+                            <div id="grandma" class="button" onclick="buy_grandma()">
+                                <div id="grandma_icon">
+                                    <div id="grandma_name" class="title">???</div>
+                                    <div id="grandma_price" class="building_price">100</div>
+                                </div>
+                                <div id="grandma_quantity" class="building_quantity"></div>
                             </div>
                         </div>
                     </div>
