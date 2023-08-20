@@ -18,7 +18,7 @@
                     <b>Authors: Bruno Geraldi Weber</b>
                 </div>
                 <div>
-                    <b>Cookie Clicker from scratch</b>
+                    <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">ORIGINAL GAME HERE</a>
                 </div>
             </div>
             <div id="game"> <!-- The game itself, everything bellow the top bar -->
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="wood_separators" class="vertical_panel_left" style="left: 30%"></div> <!-- Wood separator -->
+                <div id="wood_separators" style="left: 30%"></div> <!-- vertical wood separator -->
                 <div id="middle_panel">
                     <div id="middle_panel_buttons">
                         <div id="options" class="woodslabs">Options</div>
@@ -55,25 +55,41 @@
                         Items
                     </div>
                 </div>
-                <div id="wood_separators" class="vertical_panel_right" style="right: 317px"></div> <!-- Wood separator -->
+                <div id="wood_separators" style="right: 317px"></div> <!-- vertical wood separator -->
                 <div id="right_panel">
                     <div id="store">
                         <div id="store_title" class="title">Store</div>
-                        <div id="upgrades"></div>
+                        <div id="upgrades_area">
+                            <div id="upgrade_icon" style="display: none;" onclick="buy_upgrade()"></div>
+                        </div>
                         <div id="products">
                             <div id="cursor" class="button" onclick="buy_cursor()">
-                                <div id="cursor_icon">
-                                    <div id="cursor_name" class="title">???</div>
+                                <div id="cursor_icon" class="building_icon">
+                                    <div id="cursor_name" class="title building_name">???</div>
                                     <div id="cursor_price" class="building_price">15</div>
                                 </div>
                                 <div id="cursor_quantity" class="building_quantity"></div>
                             </div>
                             <div id="grandma" class="button" onclick="buy_grandma()">
-                                <div id="grandma_icon">
-                                    <div id="grandma_name" class="title">???</div>
+                                <div id="grandma_icon" class="building_icon">
+                                    <div id="grandma_name" class="title building_name">???</div>
                                     <div id="grandma_price" class="building_price">100</div>
                                 </div>
                                 <div id="grandma_quantity" class="building_quantity"></div>
+                            </div>
+                            <div id="farm" class="button" onclick="buy_farm()" style="display: none;">
+                                <div id="farm_icon" class="building_icon">
+                                    <div id="farm_name" class="title building_name">???</div>
+                                    <div id="farm_price" class="building_price">1,100</div>
+                                </div>
+                                <div id="farm_quantity" class="building_quantity"></div>
+                            </div>
+                            <div id="mine" class="button" onclick="buy_mine()" style="display: none;">
+                                <div id="mine_icon" class="building_icon">
+                                    <div id="mine_name" class="title building_name">???</div>
+                                    <div id="mine_price" class="building_price">12,000</div>
+                                </div>
+                                <div id="mine_quantity" class="building_quantity"></div>
                             </div>
                         </div>
                     </div>
