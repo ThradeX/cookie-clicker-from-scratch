@@ -293,7 +293,7 @@ body {
     background: url(img/blackGradientSmallTop.png) repeat-x top;
 }
 
-#upgrades {
+#upgrades_area {
     background: url(img/panelGradientLeft.png) no-repeat top left,
                 url(img/panelGradientRight.png) no-repeat top right,
                 url(img/panelHorizontal.png?v=2) repeat-x;
@@ -302,6 +302,13 @@ body {
     width: 300px;
     padding-top: 16px;
     min-height: 60px;
+}
+#upgrade_icon {
+    background: url(img/upgradeFrame.png) left top, /*60px borders*/
+                url(img/icons.png); /*48px icons*/
+    width: 60px;
+    height: 60px;
+    background-position: -60px 0px, 6px 6px;
 }
 
 #products {
@@ -314,6 +321,7 @@ body {
     width: 300px;
 }
 
+/* Every style related to the buildings on store*/
 .button {
     background: url(img/storeTile.jpg);
     position: relative;
@@ -325,6 +333,15 @@ body {
 }
 .button:hover {
     box-shadow: #fff inset 0px 0px 10px;
+}
+.building_icon {
+    background: url(img/buildings.png);
+    width: 64px;
+    height: 64px;
+}
+.building_name {
+    padding-left: 64px;
+    padding-top: 10px;
 }
 .building_quantity {
     font-size: 50px;
@@ -343,25 +360,16 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-#cursor_icon {
-    background: url(img/buildings.png);
-    width: 64px;
-    height: 64px;
+/*Just the icon, this property is moved by unlocking building*/
+#cursor_icon { 
     background-position: -64px 0px;
 }
-#cursor_name {
-    padding-left: 64px;
-    padding-top: 10px;
-}
-
 #grandma_icon {
-    background: url(img/buildings.png);
-    width: 64px;
-    height: 64px;
     background-position: -64px -64px;
 }
-#grandma_name {
-    padding-left: 64px;
-    padding-top: 10px;
+#farm_icon {
+    background-position: -64px -192px;
+}
+#mine_icon {
+    background-position: -64px -256px;
 }

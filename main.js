@@ -1,7 +1,7 @@
 var cookie_balance = 0 //Total number of cookies baked
 var cookie_balance_text = 0 //Current cookie balance
 var cookie_per_sec = 0 //Amount of cookies being earned per sec
-var bake_value = 1000 //Value of each click
+var bake_value = 10 //Value of each click
 
 const click = new Audio("snd/click1.mp3") //Sound when you click BIG COOKIE
 
@@ -42,12 +42,14 @@ function update_cookie_amount () {
         document.getElementById("cursor_price").style.color = "rgb(55, 255, 55)"
         document.getElementById("cursor_name").innerHTML = "Cursor"
         document.getElementById("farm").style.display = ""
-
     } else {
         document.getElementById("cursor").style.opacity = "60%";
         document.getElementById("cursor_price").style.color = "rgb(255, 55, 55)"
     }
-
+        var cursor_upgrade1_cost = 100
+        if (cursor_quantity >= 1) {
+            document.getElementById("upgrade_icon").style.display = "";
+        }
     //Function to update Grandma Button when possible to buy/unlocked
     if (cookie_balance_text >= grandma_price) {
         document.getElementById("grandma").style.opacity = "100%";
