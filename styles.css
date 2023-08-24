@@ -56,6 +56,10 @@ body {
     padding: 7px 8px 9px 8px;
 }
 
+#topbar a {
+    color:#fff;
+}
+
 #game {
     position: absolute;
     left: 0px;
@@ -111,12 +115,32 @@ body {
     bottom: 0px;
 }
 
-#cookie_numbers {
+#cookie_text_anchor {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    top: 10%;
-    padding: 2px 0px;
+    top: 5%;
     width: 100%;
+    z-index: 1;
+}
+
+#bakery_name {
+    margin: auto;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    color: rgba(255,255,255,0.8);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 1%;
+}
+#bakery_name:hover {
+    color: #fff;
+    text-shadow: #fff 0px 0px 8px;
+}
+
+#cookie_numbers {
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2px 0px;
 }
 #cookie_balance {
     margin-top: -2px;

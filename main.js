@@ -50,6 +50,9 @@ function update_cookie_amount () {
         if (cursor_quantity >= 1) {
             document.getElementById("upgrade_icon").style.display = "";
         }
+        if (cookie_balance_text >= cursor_upgrade1_cost) {
+            document.getElementById
+        }
     //Function to update Grandma Button when possible to buy/unlocked
     if (cookie_balance_text >= grandma_price) {
         document.getElementById("grandma").style.opacity = "100%";

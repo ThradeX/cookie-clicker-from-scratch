@@ -12,7 +12,7 @@
        <div id="wrapper"> <!-- div to wrap the whole page -->
             <div id="topbar"> <!-- Top Bar with credits -->
                 <div>
-                    <b style="font-weight:bold;">Cookie Clicker CLONE</b>
+                    <b>Cookie Clicker CLONE</b>
                 </div>
                 <div>
                     <b>Authors: Bruno Geraldi Weber</b>
@@ -25,13 +25,15 @@
                 <div id="left_panel">
                     <div id="bottom_gradient"></div>
                     <div id="bottom_filler"></div>
-                    <div id="bakery_name">
-                        Cute Bakery's Name
-                    </div>
-                    <div id="cookie_numbers">
-                        <div id="cookie_balance" class="title">
+                    <div id="cookie_text_anchor">
+                        <div id="bakery_name">
+                            Test Bakery's Name
                         </div>
-                        <div id="cookie_persec">
+                        <div id="cookie_numbers">
+                            <div id="cookie_balance" class="title">
+                            </div>
+                            <div id="cookie_persec">
+                            </div>
                         </div>
                     </div>
                     <div id="cookie_anchor">
@@ -60,10 +62,10 @@
                     <div id="store">
                         <div id="store_title" class="title">Store</div>
                         <div id="upgrades_area">
-                            <div id="upgrade_icon" style="display: none;" onclick="buy_upgrade()"></div>
+                            <div id="upgrade_icon" style="display: none;" onmouseover="tooltip_upgrade()" onclick="buy_upgrade()"></div>
                         </div>
                         <div id="products">
-                            <div id="cursor" class="button" onclick="buy_cursor()">
+                            <div id="cursor" class="button" onmouseover="tooltip_building()" onclick="buy_cursor()">
                                 <div id="cursor_icon" class="building_icon">
                                     <div id="cursor_name" class="title building_name">???</div>
                                     <div id="cursor_price" class="building_price">15</div>
